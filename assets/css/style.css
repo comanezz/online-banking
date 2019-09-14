@@ -20,6 +20,8 @@ header nav {
     justify-content: space-between;
     padding: 8px 16px;
     color: rgba(0, 0, 0, .7);
+    z-index: 10;
+    background-color: white;
 }
 
 .shad {
@@ -108,8 +110,7 @@ header nav ul li:last-child a:hover {
 /* ------------------------------ Section */
 
 section {
-    height: 800px;
-    /* background-color: Yellow; */
+    padding-top: 76px;
 }
 
 /* ------------------------------ Footer */
@@ -118,7 +119,6 @@ footer {
     display: flex;
     flex-direction: column;
     width: 100%;
-    overflow: hidden;
 }
 
 footer #first-section.first-section-small {
