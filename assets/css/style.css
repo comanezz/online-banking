@@ -1,11 +1,16 @@
-* {
+@import url('https://fonts.googleapis.com/css?family=Barlow+Condensed:400,500,700&display=swap');
+
+html,
+body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Barlow Condensed', sans-serif;
+    letter-spacing: 1px;
   }
-
-/* ------------------------------ Header */
-
+  
+  /* ------------------------------ Header */
+  
 header nav {
     position: fixed;
     width: 100%;
@@ -14,6 +19,7 @@ header nav {
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 8px 16px;
+    color: rgba(0, 0, 0, .7);
 }
 
 .shad {
@@ -34,6 +40,7 @@ header nav .logo img {
 header nav #mynavbar-toggle button {
     background-color: transparent;
     border: 0;
+    outline: 0;
 }
 
 header nav #navbar-button img {
@@ -68,7 +75,7 @@ header nav ul li:last-child a {
     margin-top: 10px;
     padding: 7px 20px;
     border-radius: 6px;
-    background-color: #93c9c5;
+    background-color: #1c9e75;
     color: white;
 }
 
@@ -81,17 +88,10 @@ header nav #mynavbar-list ul.mynavbar-nav {
     display: flex;
 }
 
-/* header nav ul li a:hover {
-    text-decoration: none;
-    background-color: #f4f4f4;
+.mouse-hover-head a:hover {
+    background-color: #f1f1f1;
     border-radius: 6px;
-    color: inherit;
-} */
-
-.mouse-hover a:hover {
-    background-color: #f4f4f4;
-    border-radius: 6px;
-    color: inherit;
+    color: #1c9e75;
     text-decoration: none;
 }
 
@@ -101,13 +101,63 @@ header nav #mynavbar-list ul li.list-space a{
 }
 
 header nav ul li:last-child a:hover {
-    color: black;
-    background-color: #93c9c5;
+    color: inherit;
+    background-color: #1c9e75;
 }
 
 /* ------------------------------ Section */
 
 section {
-    height: 2000px;
+    height: 800px;
     /* background-color: Yellow; */
 }
+
+/* ------------------------------ Footer */
+footer {
+    background-color: #dedede;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow: hidden;
+}
+
+footer #first-section.first-section-small {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+footer #first-section.first-section-large {
+    display: flex;
+    justify-content: space-between;
+}
+footer #second-section .copyright {
+    justify-content: center;
+    padding: 8px 0;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 8px 16px;
+    margin: 0;
+}
+
+footer .policy ul li, 
+footer .social-icon ul li {
+    padding: 10px 10px;
+}
+
+footer .social-icon ul li .fa {
+    /* font-size: 25px; */
+    font-size: 20px;
+}
+
+.mouse-hover-footer a:hover {
+    color: #1c9e75;
+    text-decoration: none;
+}
+
+footer ul li a {
+    color: inherit;
+}
+
