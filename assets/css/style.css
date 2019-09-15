@@ -115,8 +115,6 @@ section#first-section {
     padding-top: 76px;
 }
 
-section .mycontainer .myrow {}
-
 p {
     margin-bottom: 0;
     padding-bottom: 1rem;
@@ -137,11 +135,14 @@ a.access-btn {
 }
 
 /* ---------- First Section */
-
 section#first-section .mycontainer {
     position: relative;
     width: 100%;
     height: 55vh;
+}
+
+section#first-section .mycontainer.main-img-size {
+    height: calc(100vh - 109px);
 }
 
 section#first-section img {
@@ -159,12 +160,37 @@ section#first-section #main-title {
 
 section#second-section .mycontainer .myrow {
     display: flex;
+}
+
+section#second-section .mycontainer .col-flex {
     flex-direction: column;
 }
 
-section#second-section .mycontainer .second-col {
-    background-color: #dedede;
+.row-flex {
+    flex-direction: row;
+}
+
+.row-reverse-flex {
+    flex-direction: row-reverse;
+}
+section#second-section .mycontainer .mycol {
+    width: 100%;
     padding: 40px 20px;
+}
+
+section#second-section .mycontainer .mycol:nth-child(even) {
+    background-color: #dedede;
+    display: flex;
+    align-items: center;
+}
+
+section#second-section .mycontainer .mycol:nth-child(even) div{
+    max-width: 20rem;
+}
+
+section#second-section .mycontainer .mycol:nth-child(odd) {
+    display: flex;
+    justify-content: center;
 }
 
 section#second-section .mycontainer .myrow:last-child {
@@ -182,6 +208,7 @@ section#second-section .mycontainer .myrow:last-child .second-column {
 
 section#second-section .mycontainer .myrow:last-child .second-column img {
     width: 100%;
+    padding-top: 20px;
 }
 
 /* ------------------------------ Footer */
