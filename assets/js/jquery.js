@@ -20,7 +20,7 @@ $(document).ready(function() {
             .append(
                 `<ul>
                     <li><a href="#">Our Offices</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Contact Us</a></li>
                     <li><a href="#">Get Early Access</a></li>
                 </ul>`
             );
@@ -74,16 +74,20 @@ $(document).ready(function() {
     });
 
     // Home page Sections
-    if ($(window).width() >= 768) {
-        $("#first-section .mycontainer").addClass('main-img-size');
+    if ($(window).width() >= 992) {
+        $("#first-section .mycontainer").addClass('desktop-size');
+    } else if ($(window).width() >= 768) {
+        $("#first-section .mycontainer").addClass('tablet-size');
         $("#second-section .mycontainer .myrow").not(":last").removeClass('col-flex').addClass('row-flex');
         $("#second-section .mycontainer .myrow:odd").not(":last").addClass('row-reverse-flex');
     };
 
     // Resize sections
     $(window).resize(function() {
-        if ($(window).width() >= 768) {
-            $("#first-section .mycontainer").addClass('main-img-size');
+        if ($(window).width() >= 992) {
+            $("#first-section .mycontainer").addClass('desktop-size');
+        } else if ($(window).width() >= 768) {
+            $("#first-section .mycontainer").removeClass('desktop-size').addClass('main-img-size');
             $("#second-section .mycontainer .myrow").not(":last").removeClass('col-flex').addClass('row-flex');
             $("#second-section .mycontainer .myrow:odd").not(":last").removeClass('row-flex col-flex').addClass('row-reverse-flex');
         }
