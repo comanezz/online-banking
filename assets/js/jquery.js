@@ -5,7 +5,7 @@ $(document).ready(function() {
     var $window = $(window);
     
     $window.scroll(function() {
-        var scroll = $(window).scrollTop();
+        var scroll = $window.scrollTop();
 
         if (scroll > 0) {
             $('nav').addClass('shad');
@@ -33,106 +33,40 @@ $(document).ready(function() {
     }, function() {
         $(this).removeClass('mouse-hover-footer');
     });
+
     
     // Section Part
     // Animation effect
     // Found how to animate elements when scrolling through this webpage. https://www.sitepoint.com/scroll-based-animations-jquery-css3/
-    var $animation_elements = $('.animation_element');
+    // var $animation_elements = $('.animation-element');
     
     // Handling Resizing
-    $window.on('scroll resize', check_if_in_view);
+    // $window.on('scroll resize', check_if_in_view);
     
     /* In addition, we also use the jQuery trigger method to trigger a scroll event as soon as the DOM is ready. 
-    We do this so that if any of the elements which should be animated are within the viewport, they will be detected as in view and the animation applied as if we had scrolled.*/
-    $window.trigger('scroll');
+    We do this so that if any of the elements which should be animated are within the viewport,
+    they will be detected as in view and the animation applied as if we had scrolled. */
+    // $window.trigger('scroll');
     
     
-    function check_if_in_view() {
-        var window_height = $window.height();
-        var window_top_position = $window.scrollTop();
-        var window_bottom_position = (window_top_position + window_height);
+    // function check_if_in_view() {
+    //     var window_height = $window.height();
+    //     var window_top_position = $window.scrollTop();
+    //     var window_bottom_position = (window_top_position + window_height);
         
-        // function can be used to iterate over any collection
-        $.each($animation_elements, function() {
-           var element = $(this);
-           var element_height = element.outerHeight();
-           var element_top_position = element.offset().top;
-           var element_bottom_position = (element_top_position + element_height);
+    //     // function can be used to iterate over any collection
+    //     $.each($animation_elements, function() {
+    //        var $element = $(this);
+    //        var element_height = $element.outerHeight();
+    //        var element_top_position = $element.offset().top;
+    //        var element_bottom_position = (element_top_position + element_height);
            
-           //check to see if this current container is within viewport
-           if ((element_top_position <= window_bottom_position) && (element_bottom_position >= window_top_position)) {
-               $(element).addClass('in-view');
-           } else {
-               $(element).removeClass('in-view');
-           }
-        });
-    };
-    
-    
-    
-    // Make sure that the Navbar and Footer appears properly when loading the page
-    // if ($(window).width() <= 991.98) {
-    //     $('#mynavbar-toggle').append(`<button><img src="assets/images/menu-button.png" alt="menu-button"></button>`);
-    //     $('#mynavbar-list').addClass('small-screen')
-    //         .append(
-    //             `<ul>
-    //                 <li><a href="#">Our Offices</a></li>
-    //                 <li><a href="#">Contact Us</a></li>
-    //                 <li><a href="#">Get Early Access</a></li>
-    //             </ul>`
-    //         );
-    // }
-    // else {
-    //     $('#mynavbar-toggle').addClass('remove-it').append(`<button><img src="assets/images/menu-button.png" alt="menu-button"></button>`);
-    //     $('#mynavbar-list')
-    //         .append(
-    //             `<ul>
-    //                 <li><a href="#">Our Offices</a></li>
-    //                 <li><a href="#">Contact Us</a></li>
-    //                 <li><a href="#">Get Early Access</a></li>
-    //             </ul>`
-    //         );
-    //     $('#mynavbar-list ul').addClass('mynavbar-nav').children().addClass('list-space');
-    //     $('footer #first-section').removeClass('first-section-small').addClass('first-section-large');
+    //        //check to see if this current container is within viewport
+    //        if ((element_top_position <= window_bottom_position) && (element_bottom_position >= window_top_position)) {
+    //            $element.addClass('in-view');
+    //        } else {
+    //            $element.removeClass('in-view');
+    //        }
+    //     });
     // };
-
-    // When resizing the Navbar and Footer is responsize.
-    // $(window).resize(function() {
-
-    //     if ($(window).width() <= 991.98) {
-    //         $('#mynavbar-toggle').removeClass('remove-it');
-    //         $('#mynavbar-list').addClass('small-screen').css('display', 'none');
-    //         $('#mynavbar-list > ul').removeClass('mynavbar-nav').children().removeAttr('class');
-    //         $('footer #first-section').removeClass('first-section-large').addClass('first-section-small');
-    //     }
-    //     else {
-    //         $('#mynavbar-toggle').addClass('remove-it');
-    //         $('#mynavbar-list').removeClass('small-screen').css('display', 'block').children().addClass('mynavbar-nav').children().addClass('list-space');
-    //         $('footer #first-section').removeClass('first-section-small').addClass('first-section-large');
-    //     };
-    // });
-
-    // Home page Sections
-    // if ($(window).width() >= 992) {
-    //     $("#first-section .mycontainer").addClass('desktop-size');
-    // } else if ($(window).width() >= 768) {
-    //     $("#first-section .mycontainer").addClass('tablet-size');
-    //     $("#second-section .mycontainer .myrow").not(":last").removeClass('col-flex').addClass('row-flex');
-    //     $("#second-section .mycontainer .myrow:odd").not(":last").addClass('row-reverse-flex');
-    // };
-
-    // // Resize sections
-    // $(window).resize(function() {
-    //     if ($(window).width() >= 992) {
-    //         $("#first-section .mycontainer").addClass('desktop-size');
-    //     } else if ($(window).width() >= 768) {
-    //         $("#first-section .mycontainer").removeClass('desktop-size').addClass('main-img-size');
-    //         $("#second-section .mycontainer .myrow").not(":last").removeClass('col-flex').addClass('row-flex');
-    //         $("#second-section .mycontainer .myrow:odd").not(":last").removeClass('row-flex col-flex').addClass('row-reverse-flex');
-    //     }
-    //     else {
-    //         $("#first-section .mycontainer").removeClass('main-img-size');
-    //         $("#second-section .mycontainer .myrow").not(":last").removeClass('row-flex row-reverse-flex').addClass('col-flex');
-    //     };
-    // });
 });
