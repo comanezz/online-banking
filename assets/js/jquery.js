@@ -34,6 +34,27 @@ $(document).ready(function() {
         $(this).removeClass('mouse-hover-footer');
     });
 
+    // ------------------------------------------- Contact Page
+    $('#myform').validate({
+        rules: {
+            user_name: {
+                required: true,
+                minlength: 3
+            },
+            user_mail: {
+                required: true,
+            }
+        },
+        messages: {
+            user_name: {
+                required: "Please enter a name",
+                minlength: "Your name must consist of at least 2 characters"
+            }
+        },
+        submitHandler: function(form) {
+            alert('valid form submitted');
+        }
+    });
     
     // Section Part
     // Animation effect
