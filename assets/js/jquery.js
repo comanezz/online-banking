@@ -43,12 +43,16 @@ $(document).ready(function() {
             },
             user_mail: {
                 required: true,
+                email: true
             }
         },
         messages: {
             user_name: {
                 required: "Please enter a name",
-                minlength: "Your name must consist of at least 2 characters"
+                minlength: "Your name must consist of at least 3 characters"
+            },
+            user_mail: {
+                required: "Please enter an email"
             }
         },
         submitHandler: function(form) {
