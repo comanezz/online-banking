@@ -94,7 +94,7 @@ header nav ul li:last-child a:hover {
 
 /* ------------------------------ All Section */
 
-section#first-section {
+section.first-section {
     padding-top: 76px;
 }
 
@@ -119,18 +119,18 @@ a.access-btn {
 
 /* ---------- Index Page First Section */
 
-#index-page section#first-section .mycontainer {
+#index-page section.first-section .mycontainer {
     position: relative;
     width: 100%;
     height: 45vh;
 }
 
-#index-page section#first-section img {
+#index-page section.first-section img {
     height: 100%;
     width: 100%;
 }
 
-#index-page section#first-section #main-title {
+#index-page section.first-section #main-title {
     position: absolute;
     bottom: 0;
     padding: 20px 20px;
@@ -138,46 +138,46 @@ a.access-btn {
 
 /* ---------- Index Page Second Section */
 
-#index-page section#second-section .mycontainer .myrow {
+#index-page section.second-section .mycontainer .myrow {
     display: flex;
     flex-direction: column;
 }
 
-#index-page section#second-section .mycontainer .mycol {
+#index-page section.second-section .mycontainer .mycol {
     width: 100%;
     max-height: 480px;
     padding: 40px 40px;
 }
 
-#index-page section#second-section .mycontainer .mycol:nth-child(even) {
+#index-page section.second-section .mycontainer .mycol:nth-child(even) {
     background-color: #dedede;
     display: flex;
     align-items: center;
 }
 
-#index-page section#second-section .mycontainer .mycol:nth-child(even) div {
+#index-page section.second-section .mycontainer .mycol:nth-child(even) div {
     max-width: 20rem;
 }
 
-#index-page section#second-section .mycontainer .mycol:nth-child(odd) {
+#index-page section.second-section .mycontainer .mycol:nth-child(odd) {
     display: flex;
     justify-content: center;
 }
 
-#index-page section#second-section .mycontainer .myrow:last-child {
+#index-page section.second-section .mycontainer .myrow:last-child {
     padding: 40px 20px;
 }
 
-#index-page section#second-section .mycontainer .myrow:last-child .first-column {
+#index-page section.second-section .mycontainer .myrow:last-child .first-column {
     text-align: center;
 }
 
-#index-page section#second-section .mycontainer .myrow:last-child .second-column {
+#index-page section.second-section .mycontainer .myrow:last-child .second-column {
     max-width: 250px;
     margin: auto;
 }
 
-#index-page section#second-section .mycontainer .myrow:last-child .second-column img {
+#index-page section.second-section .mycontainer .myrow:last-child .second-column img {
     width: 100%;
     padding-top: 20px;
 }
@@ -188,17 +188,17 @@ a.access-btn {
 
 /* ------------------------------ Contact page Section */
 
-#contact-page #first-section img {
+#contact-page .first-section img {
     width: 100%;
     max-height: 505px;
     filter: brightness(65%);
 }
 
-#contact-page #first-section .mycontainer {
+#contact-page .first-section .mycontainer {
     position: relative;
 }
 
-#contact-page #first-section #main-title {
+#contact-page .first-section #main-title {
     position: absolute;
     top: 50%;
     left: 0;
@@ -208,30 +208,30 @@ a.access-btn {
     color: white;
 }
 
-#contact-page #first-section h1 {
+#contact-page .first-section h1 {
     font-size: 2.3rem;
     font-weight: 700;
 }
 
 /* ---------- Contact Page Second Section */
 
-#contact-page #second-section h3 {
+#contact-page .second-section h3 {
     text-align: center;
     padding-top: 20px;
     font-size: 2.3rem;
     font-weight: 700;
 }
 
-#contact-page #second-section form {
+#contact-page .second-section form {
     width: 80%;
     margin: 0 auto;
 }
 
-#contact-page #second-section form div {
+#contact-page .second-section form div {
     margin: 50px auto;
 }
 
-#contact-page #second-section form input, #contact-page #second-section form textarea {
+#contact-page .second-section form .form-style {
     display: block;
     border: none;
     outline: none;
@@ -240,15 +240,15 @@ a.access-btn {
     margin-bottom: 8px;
 }
 
-#contact-page #second-section form input:focus, #contact-page #second-section form textarea:focus {
+#contact-page .second-section form .form-style:focus {
     border-bottom: 2px solid #2c2c2c;
 }
 
-#contact-page #second-section form .button {
+#contact-page .second-section form .button {
     text-align: right;
 }
 
-#contact-page #second-section form button {
+#contact-page .second-section form button {
     padding: 9px 30px;
     border-radius: 6px;
     background-color: #1c9e75;
@@ -257,9 +257,13 @@ a.access-btn {
     outline: none;
 }
 
-#contact-page #second-section form button:hover {
+#contact-page .second-section form button:hover {
     color: black;
     text-decoration: none;
+}
+
+#contact-page .second-section form #phone-number input {
+
 }
 
 textarea {
@@ -284,7 +288,7 @@ footer {
     width: 100%;
 }
 
-footer #first-section.first-section-small {
+footer .first-section {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -323,13 +327,13 @@ footer ul li a {
 @media (min-width: 768px) {
     /* ------------------------- Home page */
     /* ------------- Sections */
-    #index-page section#first-section .mycontainer {
+    #index-page section.first-section .mycontainer {
         height: 50vh;
     }
-    #index-page section#second-section .mycontainer .myrow:not(:last-child) {
+    #index-page section.second-section .mycontainer .myrow:not(:last-child) {
         flex-direction: row-reverse;
     }
-    #index-page section#second-section .mycontainer .myrow:nth-child(odd) {
+    #index-page section.second-section .mycontainer .myrow:nth-child(odd) {
         flex-direction: row;
     }
 }
@@ -357,20 +361,20 @@ footer ul li a {
     }
     /* ------------------------- Home page */
     /* ------------- Sections */
-    #index-page section#first-section .mycontainer {
+    #index-page section.first-section .mycontainer {
         height: 85vh;
     }
 
     /* ------------------------- Contact page */
     /* ------------- Sections */
 
-    #contact-page #second-section form {
+    #contact-page .second-section form {
         width: 55%;
     }
 }
 
 @media (min-width: 1200px) { 
-    #contact-page #first-section img {
+    #contact-page .first-section img {
         max-height: 80vh;
     }
 }
