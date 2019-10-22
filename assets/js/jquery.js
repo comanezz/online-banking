@@ -35,6 +35,7 @@ $(document).ready(function() {
     });
 
     // ------------------------------------------- Contact Page
+    // Form validation - Allow me to control the data received
     $('#myform').validate({
         rules: {
             user_name: {
