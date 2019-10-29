@@ -266,7 +266,7 @@ a.access-btn {
 
 }
 
-textarea {
+/* textarea {
     height: 53px;
     -webkit-transition: .5s ease-out;
     -moz-transition: .5s ease-out;
@@ -277,7 +277,7 @@ textarea {
 textarea:focus {
     height: 200px;
     overflow: scroll;
-}
+} */
 
 /* ------------------------------ Footer */
 
