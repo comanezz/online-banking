@@ -266,18 +266,9 @@ a.access-btn {
 
 }
 
-/* textarea {
-    height: 53px;
-    -webkit-transition: .5s ease-out;
-    -moz-transition: .5s ease-out;
-    -o-transition: .5s ease-out;
-    transition: .5s ease-out;
+textarea {
+    height: 150px;
 }
-
-textarea:focus {
-    height: 200px;
-    overflow: scroll;
-} */
 
 /* ------------------------------ Footer */
 
