@@ -20,6 +20,14 @@ $(document).ready(function() {
         $("#mynavbar-list").slideToggle(200);
     });
 
+    // Pop up 
+    $('.sign-up').click(function() {
+        $('pop-outer').fadeIn("slow");
+    });
+    $('.close').click(function() {
+        $('.pop-outer').fadeOut('slow');
+    });
+
     // Hover effect on the navbar bar
     $('#mynavbar-list ul').children().hover(function() {
         $(this).addClass('mouse-hover-head');
@@ -34,30 +42,4 @@ $(document).ready(function() {
         $(this).removeClass('mouse-hover-footer');
     });
 
-    // ------------------------------------------- Contact Page
-    // Form validation - Allow me to control the data received
-    $('#myform').validate({
-        rules: {
-            user_name: {
-                required: true,
-                minlength: 3
-            },
-            user_mail: {
-                required: true,
-                email: true
-            }
-        },
-        messages: {
-            user_name: {
-                required: "Please enter a name",
-                minlength: "Your name must consist of at least 3 characters"
-            },
-            user_mail: {
-                required: "Please enter an email"
-            }
-        },
-        submitHandler: function(form) {
-            alert('valid form submitted');
-        }
-    });
 });
