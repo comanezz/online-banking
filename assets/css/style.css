@@ -285,7 +285,7 @@ footer .first-section {
     justify-content: center;
 }
 
-footer #second-section .copyright {
+footer .second-section .copyright {
     justify-content: center;
     padding: 8px 10px;
 }
