@@ -36,11 +36,21 @@
 
     <section class="first-section">
         <div class="mycontainer">
-            <div>
+            <div class="myrow">
                 <h1>Our Offices</h1>
             </div>
-            <div>
+            <!-- <div class="myrow">
                 <img src="assets/images/office.jpg" alt="office image">
+            </div> -->
+        </div>
+    </section>
+
+    <section class="second-section">
+        <div class="mycontainer">
+            <div>
+                <h2>Random text</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga ut alias eveniet natus officia, harum voluptatum illum sint sit dolor quas tempore in sequi? Deleniti et cumque dicta quos beatae?</p>
+                <div id="map"></div>
             </div>
         </div>
     </section>
@@ -65,9 +75,20 @@
         </div>
     </footer>
 
+    <script>
+        var map;
+        function initMap() {
+          map = new google.maps.Map(document.getElementById('map'), {
+            center: {lat: -34.397, lng: 150.644},
+            zoom: 8
+          });
+        }
+      </script>
+
     <!-- jQuery scripts -->
     <script src="assets/js/jquery-3.4.1.js"></script>
     <script src="assets/js/jquery.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA31cgEpIcSUSuid0eXXC2aDNav3OB8sVA&callback=initMap" type="text/javascript"></script>
 </body>
 
 </html>
