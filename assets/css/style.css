@@ -199,10 +199,6 @@ a.access-btn {
     padding-top: 20px;
 }
 
-.in-view {
-    background-color: lightblue;
-}
-
 /* ------------------------------ Our Offices Section */
 
 #office-page .first-section .mycontainer {
@@ -223,27 +219,23 @@ a.access-btn {
 
 #office-page .second-section .mycontainer .myrow {
     border: 2px solid lightgrey;
-    margin: 40px 20px; 
+    margin: 40px 20px 60px 20px; 
 }
 
-#office-page .second-section .mycontainer .myrow div:nth-child(2), #office-page .second-section .mycontainer .myrow div:first-child {
+#office-page .second-section .mycontainer .myrow .content {
     padding: 32px;
+    width: 100%;
 }
 
 #office-page .second-section .mycontainer .myrow div:nth-child(2) h2:nth-child(3), #office-page .second-section .mycontainer .myrow div:first-child h2:nth-child(3) {
     font-weight: 700;
 }
 
-#office-page .second-section .mycontainer .myrow div:nth-child(2) p{
-    font-size: 0.9rem
+#office-page .second-section .mycontainer .myrow p{
+    font-size: 0.9rem;
 }
 
-#office-page .second-section .mycontainer #map {
-    height: 500px;
-    background-color: orange;
-}
-
-#office-page .second-section .mycontainer #map2 {
+#office-page .second-section .mycontainer #map, #office-page .second-section .mycontainer #map2 {
     height: 500px;
     background-color: orange;
 }
@@ -252,7 +244,7 @@ a.access-btn {
 
 #contact-page .first-section img {
     width: 100%;
-    max-height: 505px;
+    max-height: 565px;
     filter: brightness(65%);
 }
 
@@ -385,6 +377,20 @@ footer ul li a {
     #index-page section.second-section .mycontainer .myrow:nth-child(odd) {
         flex-direction: row;
     }
+
+    /* ------------------------- Office page */
+    #office-page .second-section .mycontainer .myrow {
+        display: flex;
+        margin: 40px 40px 60px 40px; 
+    }
+
+    #office-page .second-section .mycontainer:last-child .myrow {
+        flex-direction: row-reverse;
+    }
+
+    #office-page .second-section .mycontainer #map, #office-page .second-section .mycontainer #map2 {
+        width: 430px;
+    }
 }
 
 @media (min-width: 992px) {
@@ -411,7 +417,17 @@ footer ul li a {
     /* ------------------------- Home page */
     /* ------------- Sections */
     #index-page section.first-section .mycontainer {
-        height: 85vh;
+        height: 90vh;
+    }
+
+    /* ------------------------- Office page */
+    #office-page .second-section .mycontainer .myrow {
+        margin: 40px 80px 60px 80px; 
+    }
+
+    #office-page .second-section .mycontainer #map, #office-page .second-section .mycontainer #map2 {
+        height: 500px;
+        width: 780px;
     }
 
     /* ------------------------- Contact page */
@@ -424,6 +440,6 @@ footer ul li a {
 
 @media (min-width: 1200px) { 
     #contact-page .first-section img {
-        max-height: 80vh;
+        max-height: 90vh;
     }
 }
