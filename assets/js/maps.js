@@ -1,19 +1,20 @@
         var map;
         function initMap() {
-          var marseille = {lat: 43.2965, lng: 5.3698};
+          var marseilleStade = {lat: 43.2698, lng: 5.3959};
           map = new google.maps.Map(document.getElementById('map'), {
-            center: marseille,
-            zoom: 10
+            center: marseilleStade,
+            zoom: 16
           });
           
           var velodrome = {lat: 43.2698, lng: 5.3959};
           var marker = new google.maps.Marker({position:velodrome, map: map});
           
+          var aix = {lat:43.5263, lng:5.4454};
           map = new google.maps.Map(document.getElementById('map2'), {
-            center: marseille,
-            zoom: 10
+            center: aix,
+            zoom: 16
           });
           
-          var marignane = {lat:43.4213, lng:5.2183}
-          var marker = new google.maps.Marker({position: marignane, map: map});
+          var fontaineAix = {lat:43.5263, lng:5.4454}
+          var marker = new google.maps.Marker({position: fontaineAix, map: map});
         }

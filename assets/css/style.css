@@ -211,21 +211,43 @@ a.access-btn {
 
 #office-page .first-section .mycontainer .myrow {
     display: flex;
+    text-align: center;
+    padding: 20px;
     justify-content: center;
 }
 
+#office-page .first-section .mycontainer .myrow h1 {
+    font-size: 2.3rem;
+    font-weight: 700;
+}
+
+#office-page .second-section .mycontainer .myrow {
+    border: 2px solid lightgrey;
+    margin: 40px 20px; 
+}
+
+#office-page .second-section .mycontainer .myrow div:nth-child(2), #office-page .second-section .mycontainer .myrow div:first-child {
+    padding: 32px;
+}
+
+#office-page .second-section .mycontainer .myrow div:nth-child(2) h2:nth-child(3), #office-page .second-section .mycontainer .myrow div:first-child h2:nth-child(3) {
+    font-weight: 700;
+}
+
+#office-page .second-section .mycontainer .myrow div:nth-child(2) p{
+    font-size: 0.9rem
+}
+
 #office-page .second-section .mycontainer #map {
-    height: 400px;
+    height: 500px;
+    background-color: orange;
 }
 
 #office-page .second-section .mycontainer #map2 {
-    height: 400px;
+    height: 500px;
+    background-color: orange;
 }
 
-/* #office-page .first-section .mycontainer img {
-    width: 100%;
-    height: 100%;
-} */
 /* ------------------------------ Contact page Section */
 
 #contact-page .first-section img {
