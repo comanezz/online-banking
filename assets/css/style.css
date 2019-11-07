@@ -227,7 +227,8 @@ a.access-btn {
     width: 100%;
 }
 
-#office-page .second-section .mycontainer .myrow div:nth-child(2) h2:nth-child(3), #office-page .second-section .mycontainer .myrow div:first-child h2:nth-child(3) {
+#office-page .second-section .mycontainer .myrow div:nth-child(2) h2:nth-child(3), 
+#office-page .second-section .mycontainer .myrow div:first-child h2:nth-child(3) {
     font-weight: 700;
 }
 
@@ -384,11 +385,8 @@ footer ul li a {
         margin: 40px 40px 60px 40px; 
     }
 
-    #office-page .second-section .mycontainer:last-child .myrow {
-        flex-direction: row-reverse;
-    }
-
-    #office-page .second-section .mycontainer #map, #office-page .second-section .mycontainer #map2 {
+    #office-page .second-section .mycontainer #map,
+    #office-page .second-section .mycontainer #map2 {
         width: 430px;
     }
 }
