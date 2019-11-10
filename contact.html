@@ -52,6 +52,27 @@
         </div>
     </section>
 
+    <!-- Modal form pop up -->
+    <!-- Need to place the form here, otherwise it won't work below the footer -->
+    <div id="form-modal">
+        <div class="main">
+            <form class="form" method="post" action="#">
+                <span class="close">&times;</span>
+                <h2>Sign In</h2>
+                <hr>
+                <label>Name :</label>
+                <input type="text" name="dname" id="name">
+                <label>Email :</label>
+                <input type="email" name="demail" id="email" required>
+                <label>Password :</label>
+                <input type="password" name="password" id="password">
+                <label>Confirm Password :</label>
+                <input type="password" name="cpassword" id="cpassword">
+                <input type="button" name="register" id="register" value="Register">
+            </form>
+        </div>
+    </div>
+
     <section class="second-section">
         <h3>Contact Us</h3>
         <form id="myform" onsubmit="return sendMail(this)">
@@ -98,7 +119,7 @@
         </div>
     </footer>
 
-    <div id="form-modal">
+    <!-- <div id="form-modal">
         <div class="main">
             <form class="form" method="post" action="#">
                 <span class="close">&times;</span>
@@ -115,7 +136,7 @@
                 <input type="button" name="register" id="register" value="Register">
             </form>
         </div>
-    </div>
+    </div> -->
 
     <!-- jQuery scripts -->
     <script src="assets/js/jquery-3.4.1.js"></script>
