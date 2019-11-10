@@ -479,7 +479,7 @@ footer ul li a {
         display: none;
     }
     header nav #mynavbar-list.menu-list {
-        display: flex;
+        display: flex !important; /* Need to use important to override the style none from the slide Toogle*/
         flex-basis: unset;
     }
     header nav #mynavbar-list ul {
