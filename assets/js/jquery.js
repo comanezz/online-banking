@@ -17,10 +17,8 @@ $(document).ready(function() {
 
     // Dropdown menu when clicking on the button menu
     $("#mynavbar-toggle").on("click", function() {
-        event.stopPropagation();
         $("#mynavbar-list").slideToggle(200);
     });
-    
 
 
     // Modal form pop-up hide and show 
@@ -34,6 +32,21 @@ $(document).ready(function() {
 
     close.click(function() {
         modal.hide();
+    });
+
+    // Close the dropdown menu when clicking the sign up button in the nav
+    if ($(window).width() <= 992) {
+        $('#btn-list').click(function() {
+            $("#mynavbar-list").slideUp(200);
+        });
+    };
+
+    $(window).resize(function() {
+        if ($(window).width() <= 992) {
+            $('#btn-list').click(function() {
+                $("#mynavbar-list").slideUp(200);
+            });
+        };
     });
 
     // Hover effect on the navbar bar

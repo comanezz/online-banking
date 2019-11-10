@@ -502,7 +502,8 @@ footer ul li a {
 
     /* ------------------------- Office page */
     #office-page .second-section .mycontainer .myrow {
-        margin: 40px 80px 60px 80px; 
+        margin: 40px 80px 60px 80px;
+        max-width: 1116px; 
     }
 
     #office-page .second-section .mycontainer #map, #office-page .second-section .mycontainer #map2 {
