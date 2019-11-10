@@ -17,15 +17,23 @@ $(document).ready(function() {
 
     // Dropdown menu when clicking on the button menu
     $("#mynavbar-toggle").on("click", function() {
+        event.stopPropagation();
         $("#mynavbar-list").slideToggle(200);
     });
+    
 
-    // Pop up 
-    $('.sign-up').click(function() {
-        $('pop-outer').fadeIn("slow");
+
+    // Modal form pop-up hide and show 
+    var btn = $('.sign-up');
+    var modal = $('#form-modal');
+    var close = $('.close');
+
+    btn.click(function() {
+        modal.show();
     });
-    $('.close').click(function() {
-        $('.pop-outer').fadeOut('slow');
+
+    close.click(function() {
+        modal.hide();
     });
 
     // Hover effect on the navbar bar

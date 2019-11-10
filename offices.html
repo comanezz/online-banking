@@ -28,7 +28,7 @@
                 <ul>
                     <li><a href="offices.html">Our Offices</a></li>
                     <li><a href="contact.html">Contact Us</a></li>
-                    <li><a href="#">Sign Up</a></li>
+                    <li><a href="#" class="sign-up">Sign Up</a></li>
                 </ul>
             </div>
         </nav>
@@ -111,9 +111,33 @@
         </div>
     </footer>
 
+    <div id="form-modal">
+        <div class="main">
+            <form class="form" method="post" action="#">
+                <span class="close">&times;</span>
+                <h2>Sign In</h2>
+                <hr>
+                <label>Name :</label>
+                <input type="text" name="dname" id="name">
+                <label>Email :</label>
+                <input type="email" name="demail" id="email" required>
+                <label>Password :</label>
+                <input type="password" name="password" id="password">
+                <label>Confirm Password :</label>
+                <input type="password" name="cpassword" id="cpassword">
+                <input type="button" name="register" id="register" value="Register">
+            </form>
+        </div>
+    </div>
+
     <!-- jQuery scripts -->
     <script src="assets/js/jquery-3.4.1.js"></script>
     <script src="assets/js/jquery.js"></script>
+
+    <!-- Form script -->
+    <script src="assets/js/registration.js"></script>
+    
+    <!-- Google map API -->
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA31cgEpIcSUSuid0eXXC2aDNav3OB8sVA&callback=initMap"></script>
     <script src="assets/js/maps.js"></script>
 </body>
