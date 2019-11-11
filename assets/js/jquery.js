@@ -22,16 +22,16 @@ $(document).ready(function() {
 
 
     // Modal form pop-up hide and show 
-    var btn = $('.sign-up');
-    var modal = $('#form-modal');
-    var close = $('.close');
+    var $btn = $('.sign-up');
+    var $modal = $('#form-modal');
+    var $close = $('.close');
 
-    btn.click(function() {
-        modal.show();
+    $btn.click(function() {
+        $modal.show();
     });
 
-    close.click(function() {
-        modal.hide();
+    $close.click(function() {
+        $modal.hide();
     });
 
     // Close the dropdown menu when clicking the sign up button in the nav
