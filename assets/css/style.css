@@ -258,6 +258,7 @@ a.access-btn {
     background-color: #dedede;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 #index-page section.second-section .mycontainer .mycol:nth-child(even) div {
@@ -515,7 +516,7 @@ footer ul li a {
 
     /* ------------------------- Office page */
     #office-page .second-section .mycontainer .myrow {
-        margin: 40px 80px 60px 80px;
+        margin: 40px auto 60px auto;
         max-width: 1116px; 
     }
 
