@@ -70,18 +70,20 @@ header nav .menu-list ul li {
     border-top: 1px solid rgba(0, 0, 0, 0.2);
 }
 
-header nav ul li a {
+header nav ul li a,
+header nav ul li button {
     display: block;
     color: inherit;
 }
 
-header nav ul li:last-child a {
+header nav ul li:last-child button {
     display: inline-block;
     margin-top: 10px;
     padding: 7px 20px;
     border-radius: 6px;
     background-color: #1c9e75;
     color: white;
+    outline: none;
 }
 
 .mouse-hover-head a:hover {
@@ -91,7 +93,7 @@ header nav ul li:last-child a {
     text-decoration: none;
 }
 
-header nav ul li:last-child a:hover {
+header nav ul li:last-child button:hover {
     color: inherit;
     background-color: #1c9e75;
 }
@@ -107,13 +109,15 @@ p {
     padding-bottom: 1rem;
 }
 
-a.access-btn {
+button.access-btn {
     display: inline-block;
-    padding: 9px 30px;
+    padding: 9px 33px;
     border-radius: 6px;
     background-color: #1c9e75;
     color: white;
     margin-bottom: 1rem;
+    outline: none;
+    border: #1c9e75;
 }
 
 .access-btn:hover {
@@ -139,7 +143,8 @@ a.access-btn {
 
 #form-modal h2 {
     text-align: center;
-    /* font-size: 24px; */
+    border-bottom: 1px solid #f1f1f1;
+    padding-bottom: 20px;
 }
 
 #form-modal .close {
@@ -154,11 +159,6 @@ a.access-btn {
   color: #000;
   text-decoration: none;
   cursor: pointer;
-}
-
-#form-modal hr {
-    border: 1px solid #f1f1f1;
-    margin-bottom: 25px;
 }
 
 #form-modal div.main {
@@ -506,6 +506,11 @@ footer ul li a {
     }
     header nav #mynavbar-list ul li a {
         padding: 5px 20px;
+        margin: 10px;
+    }
+
+    header nav #mynavbar-list ul li button {
+        padding: 5px 33px;
         margin: 10px;
     }
     /* ------------------------- Home page */
