@@ -222,7 +222,7 @@ button.access-btn {
 #index-page section.first-section .mycontainer {
     position: relative;
     width: 100%;
-    height: 58vh;
+    height: 250px;
 }
 
 #index-page section.first-section img {
@@ -234,6 +234,7 @@ button.access-btn {
     position: absolute;
     bottom: 0;
     padding: 20px 20px;
+    color: white;
 }
 
 /* ---------- Index Page Second Section */
@@ -466,7 +467,7 @@ footer ul li a {
     /* ------------------------- Home page */
     /* ------------- Sections */
     #index-page section.first-section .mycontainer {
-        height: 50vh;
+        height: 512px;
     }
     #index-page section.second-section .mycontainer .myrow:not(:last-child) {
         flex-direction: row-reverse;
