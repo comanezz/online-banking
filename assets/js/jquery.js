@@ -41,11 +41,11 @@ $(document).ready(function () {
     var $close = $('.close');
 
     $btn.click(function () {
-        $modal.show();
+        $modal.toggleClass();
     });
 
     $close.click(function () {
-        $modal.hide();
+        $modal.toggleClass();
     });
 
     // Close the dropdown menu when clicking the sign up button in the nav

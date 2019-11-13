@@ -81,6 +81,7 @@ header nav ul li:last-child button {
     margin-top: 10px;
     padding: 7px 20px;
     border-radius: 6px;
+    border: #1c9e75;
     background-color: #1c9e75;
     color: white;
     outline: none;
@@ -128,7 +129,6 @@ button.access-btn {
 /* ---------- Modal Form */
 
 #form-modal {
-    display: none;
     position: fixed;
     z-index: 1;
     padding-top: 100px;
@@ -139,6 +139,10 @@ button.access-btn {
     overflow: auto;
     background-color: rgb(0, 0, 0);
     background-color: rgba(0, 0, 0, 0.4);
+}
+
+.no-display {
+    display: none;
 }
 
 #form-modal h2 {
@@ -166,7 +170,6 @@ button.access-btn {
     margin: auto;
     padding: 10px 55px 20px;
     background-color: #dedede;
-    border: 15px solid white;
     box-shadow: 0 0 10px;
     border-radius: 2px;
     font-size: 13px;
