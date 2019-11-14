@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Barlow+Condensed:400,500,700&display=swap');
-html, body {
+html, 
+body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -52,10 +53,6 @@ header nav #navbar-button img {
 header nav #mynavbar-list.menu-list {
     display: none;
     flex-basis: 100%;
-}
-
-.list-view {
-    display: block;
 }
 
 header nav ul {
@@ -218,11 +215,11 @@ button.access-btn {
 #form-modal #register:hover {
     color: black;
     text-decoration: none;
-    ;
 }
+
 /* ---------- Index Page First Section */
 
-#index-page section.first-section .mycontainer {
+#index-page section.first-section .title-container {
     position: relative;
     width: 100%;
     height: 250px;
@@ -474,7 +471,7 @@ footer ul li a {
 @media (min-width: 768px) {
     /* ------------------------- Home page */
     /* ------------- Sections */
-    #index-page section.first-section .mycontainer {
+    #index-page section.first-section .title-container {
         height: 512px;
     }
     #index-page section.second-section .mycontainer .myrow:not(:last-child) {
@@ -524,7 +521,7 @@ footer ul li a {
     }
     /* ------------------------- Home page */
     /* ------------- Sections */
-    #index-page section.first-section .mycontainer {
+    #index-page section.first-section .title-container {
         height: 90vh;
     }
 
@@ -554,7 +551,7 @@ footer ul li a {
 }
 
 @media (min-height: 1366px) and (min-width: 1024px) {
-    #index-page section.first-section .mycontainer {
+    #index-page section.first-section .title-container {
         max-height: 60vh;
     }
 }
