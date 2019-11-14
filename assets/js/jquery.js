@@ -63,4 +63,8 @@ $(document).ready(function () {
         };
     });
 
+    // ----------------- No mobile animation causing some css issue
+    if ($(window).width() < 768) {
+        $('.animation-element').children().removeClass('not-visible');
+    };
 });
