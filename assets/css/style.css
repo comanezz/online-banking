@@ -421,6 +421,11 @@ textarea {
     height: 150px;
 }
 
+.sent {
+    pointer-events: none;
+    opacity: .5;
+}
+
 /* ------------------------------ Footer */
 
 footer {
