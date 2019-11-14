@@ -15,7 +15,7 @@ $(document).ready(function() {
             alert('Your password must match. Try again')
         } else {
             alert('You have successfully registered')
-            $('form')[0].reset()
+            $('form')[0].reset();
             $('#form-modal').hide();
         }
     });
