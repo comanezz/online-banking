@@ -21,4 +21,4 @@ function initMap() {
 
   var fontaineAix = { lat: 43.5263, lng: 5.4454 }
   var marker = new google.maps.Marker({ position: fontaineAix, map: aixEnProvence });
-}
+};
