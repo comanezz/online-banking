@@ -1,5 +1,6 @@
 $(document).ready(function() {
     // Using library from http://imakewebthings.com/waypoints/ to use animation when scrolling
+    // Use this file jquery.waypoints.min.js as library
     // - No mobile animation causing some css issue on mobile view
     // Large screen view
     if ($(window).width() > 992) {
