@@ -1,5 +1,6 @@
 $(document).ready(function() {
-    // ----------------- No mobile animation causing some css issue
+    // Using library from http://imakewebthings.com/waypoints/ 
+    // - No mobile animation causing some css issue
     // Large screen view
     if ($(window).width() > 992) {
         var waypoint = new Waypoint({
