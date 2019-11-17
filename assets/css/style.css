@@ -550,6 +550,7 @@ footer ul li a {
     }
 }
 
+/* Ipad pro view */
 @media (min-height: 1366px) and (min-width: 1024px) {
     #index-page section.first-section .title-container {
         max-height: 60vh;
