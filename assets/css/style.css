@@ -142,6 +142,7 @@ button.access-btn {
     display: none;
 }
 
+/* For the form part I've taken example from https://www.formget.com/jquery-registration-form/ and w3school */
 #form-modal h2 {
     text-align: center;
     border-bottom: 1px solid #f1f1f1;

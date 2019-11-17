@@ -1,3 +1,4 @@
+// I've taken example from https://www.formget.com/jquery-registration-form/
 $(document).ready(function() {
     $("#register").click(function() {
         var name = $("#name").val();
