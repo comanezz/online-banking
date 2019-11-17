@@ -1,7 +1,7 @@
 // I've taken example from https://www.formget.com/jquery-registration-form/
 $(document).ready(function() {
     $("#register").click(function() {
-        var name = $("#name").val();
+        var name = $("#modal-name").val();
         var email = $("#email").val();
         var password = $("#password").val();
         var cpassword = $('#cpassword').val();
