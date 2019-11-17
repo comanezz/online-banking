@@ -124,7 +124,7 @@ button.access-btn {
 }
 
 /* ---------- Modal Form */
-
+/* For the form part I've taken example from https://www.formget.com/jquery-registration-form/ and w3school */
 #form-modal {
     position: fixed;
     z-index: 1;
@@ -142,7 +142,6 @@ button.access-btn {
     display: none;
 }
 
-/* For the form part I've taken example from https://www.formget.com/jquery-registration-form/ and w3school */
 #form-modal h2 {
     text-align: center;
     border-bottom: 1px solid #f1f1f1;
@@ -218,7 +217,8 @@ button.access-btn {
     text-decoration: none;
 }
 
-/* ---------- Index Page First Section */
+/* ------------------------------ Index Page */
+/* ---------- First Section */
 
 #index-page section.first-section .title-container {
     position: relative;
@@ -238,7 +238,7 @@ button.access-btn {
     color: white;
 }
 
-/* ---------- Index Page Second Section */
+/* ---------- Second Section */
 
 #index-page section.second-section h1{
     font-size: 2.3rem;
@@ -299,8 +299,8 @@ button.access-btn {
     opacity: 1;
 }
 
-/* ------------------------------ Our Offices Section */
-
+/* ------------------------------ Offices page Section */
+/* ---------- First Section */
 #office-page .first-section .mycontainer {
     width: 100%;
 }
@@ -317,6 +317,7 @@ button.access-btn {
     font-weight: 700;
 }
 
+/* ---------- Second Section */
 #office-page .second-section .mycontainer .myrow {
     border: 2px solid lightgrey;
     margin: 40px 20px 60px 20px; 
@@ -340,7 +341,8 @@ button.access-btn {
     height: 500px;
 }
 
-/* ------------------------------ Contact page Section */
+/* ------------------------------ Contact page */
+/* ---------- First Section */
 
 #contact-page .first-section .title-container {
     position: relative;
@@ -371,7 +373,7 @@ button.access-btn {
     font-weight: 700;
 }
 
-/* ---------- Contact Page Second Section */
+/* ---------- Second Section */
 
 #contact-page .second-section h3 {
     text-align: center;
@@ -537,7 +539,8 @@ footer ul li a {
         max-width: 1116px; 
     }
 
-    #office-page .second-section .mycontainer #map, #office-page .second-section .mycontainer #map2 {
+    #office-page .second-section .mycontainer #map, 
+    #office-page .second-section .mycontainer #map2 {
         height: 500px;
         width: 780px;
     }
@@ -558,7 +561,18 @@ footer ul li a {
 
 /* Ipad pro view */
 @media (min-height: 1366px) and (min-width: 1024px) {
+    /* ------------------------- Home page */
     #index-page section.first-section .title-container {
         max-height: 60vh;
+    }
+
+    /* ------------------------- Office page */
+    #office-page .second-section .mycontainer .myrow {
+        margin: 40px 20px 60px 20px;
+    }
+
+    #office-page .second-section .mycontainer #map, 
+    #office-page .second-section .mycontainer #map2 {
+        width: 735px;
     }
 }
