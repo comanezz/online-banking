@@ -366,6 +366,7 @@ button.access-btn {
     transform: translateY(-50%);
     text-align: center;
     color: white;
+    margin: 0 5px;
 }
 
 #contact-page .first-section h1 {
