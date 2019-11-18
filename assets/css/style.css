@@ -348,13 +348,8 @@ button.access-btn {
 /* ------------------------------ Contact page */
 /* ---------- First Section */
 
-#contact-page .first-section .title-container {
-    position: relative;
-}
-
 #contact-page .first-section img {
     width: 100%;
-    max-height: 565px;
     filter: brightness(90%);
 }
 
@@ -559,5 +554,9 @@ footer ul li a {
     #office-page .second-section .mycontainer #map, 
     #office-page .second-section .mycontainer #map2 {
         width: 735px;
+    }
+    /* ------------------------- Contact page */
+    #contact-page section.second-section {
+        padding-bottom: 120px;
     }
 }
