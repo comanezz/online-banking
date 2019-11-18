@@ -150,7 +150,6 @@ button.access-btn {
 
 #form-modal .close {
     color: #aaaaaa;
-    float: right;
     font-size: 28px;
     font-weight: bold;
 }
@@ -266,10 +265,6 @@ button.access-btn {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-#index-page section.second-section .mycontainer .mycol:nth-child(even) div {
-    max-width: 20rem;
 }
 
 #index-page section.second-section .mycontainer .mycol:nth-child(odd) {
