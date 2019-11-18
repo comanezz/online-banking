@@ -257,6 +257,10 @@ button.access-btn {
     text-align: center;
 }
 
+#index-page section.second-section .mycontainer .mycol img {
+    width: 215px;
+}
+
 #index-page section.second-section .mycontainer .mycol:nth-child(even) {
     background-color: #dedede;
     display: flex;
