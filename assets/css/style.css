@@ -355,34 +355,14 @@ button.access-btn {
 #contact-page .first-section img {
     width: 100%;
     max-height: 565px;
-    filter: brightness(65%);
-}
-
-#contact-page .first-section .mycontainer {
-    position: relative;
-}
-
-#contact-page .first-section #main-title {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    right: 0;
-    transform: translateY(-50%);
-    text-align: center;
-    color: white;
-    margin: 0 5px;
-}
-
-#contact-page .first-section h1 {
-    font-size: 2.3rem;
-    font-weight: 700;
+    filter: brightness(90%);
 }
 
 /* ---------- Second Section */
 
 #contact-page .second-section h3 {
     text-align: center;
-    padding-top: 20px;
+    padding-top: 40px;
     font-size: 2.3rem;
     font-weight: 700;
 }

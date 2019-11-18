@@ -158,8 +158,8 @@ To cut ties with this GitHub repository, type `git remote rm origin` into the te
 
 - The logo was created on [Free Logo Design](https://fr.freelogodesign.org/)
 - The menu button was taken from [Awwwards site](https://www.awwwards.com/sites/product-designer-patryk-kopec)
-- Card images and smartphones images in Home page were taken from **Google Image**.
-- Image on contact us page taken from [Pexels](https://www.pexels.com/)
+- Card images and smartphones images in Home page were taken from **Google Images**.
+- Image on contact us page taken from **Google Images**
 
 ### Acknowledgements
 
