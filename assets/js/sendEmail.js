@@ -1,3 +1,4 @@
+// Code taken example from https://github.com/Code-Institute-Solutions/InteractiveFrontendDevelopment-Resume/blob/master/03-SendingEmailsUsingEmailJS/06-sending_emails/assets/js/sendEmail.js
 function sendMail(contactForm) {
     // To avoid sending to much email
     $('.button > button').addClass('sent');
