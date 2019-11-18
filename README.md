@@ -18,7 +18,7 @@ A live demo can be found [here](https://comanezz.github.io/online-banking/).
 
 #### User Stories:
 
-- As a new visitor, I want to learn about the feature of Online Banking.
+- As a new visitor, I want to learn about the features of Online Banking.
 - As a new visitor, I want to see where the offices are located.
 - As a new visitor, I want to contact Online Banking.
 - As a new visitor, I want to sign up to get updated.
@@ -44,19 +44,22 @@ A live demo can be found [here](https://comanezz.github.io/online-banking/).
 - Each page has a responsive **navbar** with a **Sign Up** button that will pop a form when clicked. 
 - Each page has a footer with **Social Media Icons** linking to the social media pages.
 
-When clicking on the **Sign Up** button a pop up form will show up. The form require to fill informations as name, email, password and confirm password. At the bottom of the form there is a "Register" button. Once the form filled correctly and the "register" button clicked, an alert message will appear and the form will close. 
+When clicking on the **Sign Up** button a pop up form will show up. The form requires to fill informations as name, email, password and confirm password. At the bottom of the form there is a "Register" button. Once the form is filled correctly and the "register" button is clicked, an alert message will appear and the form will close. 
 
 **Home page**
 
-The "Home" page has slides animations when scrolling down. Used this [script](https://github.com/comanezz/online-banking/blob/master/assets/js/script-waypoints.js) for the scrolling event.
+The "Home" page has slides animations when scrolling down for the user to learn more about Online Banking features. I used this [script](https://github.com/comanezz/online-banking/blob/master/assets/js/script-waypoints.js) for the scrolling event.
 
 **Office page**
 
-The "Office" page has two maps to show the location of the offices. Used this [script](https://github.com/comanezz/online-banking/blob/master/assets/js/maps.js) to show the maps.
+The "Office" page has two google maps that show the user the exact location of each office. I used this [script](https://github.com/comanezz/online-banking/blob/master/assets/js/maps.js) to show the maps.
 
 **Contact**
 
-The "Contact" page features a contact form to enable client to send a request. The form require to fill informations such as email, name and a message. At the bottom of the form there is a "submit" button to enable the client to confirm the request. Once the request is sent, there is an alert saying that the form has been submitted and the submit button becomes unavailable and grey.
+The "Contact" page features a contact form to enable the user to send a request. The form requires to fill informations such as email, name and a message. At the bottom of the form there is a "submit" button to enable the user to confirm the request. Once the request is sent, there is an alert saying that the form has been submitted and the submit button becomes unavailable and grey.
+
+### Features Left to Implement
+- "My account" section: there would be my account button opening a page where client can log in and have access to their online bank account, subscribe to new features, etc.
 
 ## Technologies Used
 
@@ -114,7 +117,7 @@ The "Contact" page features a contact form to enable client to send a request. T
 - Sign up button in the first section part works correctly (form pop up).
 
 ### Office page
-- Maps works correctly when loading the page - Markers are placed correctly
+- The two maps work correctly when loading the page - Markers are placed correctly
 
 ### Contact page
 1. Contact form:
@@ -126,8 +129,9 @@ The "Contact" page features a contact form to enable client to send a request. T
     6. Try to submit the form with all valid inputs and verify that no error message appears.
 
 ### Problems
-- Home page was not responsive on mobile. The navbar was not reacting as expected - The issue was coming from the animation css that I added. To resolve this issue I had to remove the animation scrolling on mobile view. 
-- When pop up form is shown on the page we can not leave the pop up form by clicking outside of it. You can only leave the pop up form by filling the form or by clicking on the "X". Solution not found even the mentor did not find any solution for this.
+- Home page was not responsive on mobile and the navbar was not reacting as expected.
+The issue was coming from the animation css library that I added. To resolve this issue I had to remove the animation scrolling on mobile view. 
+- When the pop up form appears on the page we can not leave the pop up form by clicking outside of it. You can only leave the pop up form by filling the form or by clicking on the "X". Solution not found even the mentor did not find any solution for this.
 
 ## Deployment
 
@@ -158,8 +162,8 @@ To cut ties with this GitHub repository, type `git remote rm origin` into the te
 
 - The logo was created on [Free Logo Design](https://fr.freelogodesign.org/)
 - The menu button was taken from [Awwwards site](https://www.awwwards.com/sites/product-designer-patryk-kopec)
-- Card images and smartphones images in Home page were taken from **Google Images**.
-- Image on contact us page taken from **Google Images**
+- Card images and smartphones images on the Home page were taken from **Google Images**.
+- The "Get in touch" image on the Contact us page was taken from **Google Images**.
 
 ### Acknowledgements
 
